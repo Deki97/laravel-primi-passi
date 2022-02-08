@@ -29,6 +29,19 @@ Route::get('/', function () {
         ]
     ];
     return view('home', $info);
+})->name('home');
 
 
-});
+Route::get('/about-me', function() {
+    return view('about');
+})->name('about');
+
+
+Route::get('/news', function() {
+    return view('news');
+})->name('news');
+
+
+Route::get('/contacts', function() {
+    return view('contacts');
+})->name('contacts');

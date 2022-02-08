@@ -9,6 +9,13 @@
 <body>
     <h1>Hello World!</h1>
 
+    {{-- Header menu che linka alle pagine tramite la funzione route() --}}
+    <ul>
+        <li><a href="{{ route('about') }}">About me</a></li>
+        <li><a href="{{ route('news') }}">News</a></li>
+        <li><a href="{{ route('contacts') }}">Contacts</a></li>
+    </ul>
+
     {{-- Richiamo e stampo i dati in pagina tramite Blade --}}
     <h2>Name: {{ $name }}</h2>
     <h2>Lastname: {{ $lastname }}</h2>
