@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Tramite il Route indirizzo l'utente alla pagina passata in view
+// In questo caso passo anche dei dati in modo che vengano visualizzati dinamicamente all'interno di home.blade.php
 Route::get('/', function () {
     $info = [
         'name' => 'Dejan',
@@ -27,5 +30,5 @@ Route::get('/', function () {
     ];
     return view('home', $info);
 
-    
+
 });
